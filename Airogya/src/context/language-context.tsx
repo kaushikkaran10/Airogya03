@@ -40,8 +40,6 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     switch (lang) {
       case 'hi':
         return 'font-devanagari';
-      case 'or':
-        return 'font-odia';
       default:
         return 'font-sans';
     }

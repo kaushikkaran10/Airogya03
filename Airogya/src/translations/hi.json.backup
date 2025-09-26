@@ -1,0 +1,33 @@
+{
+  "app": {
+    "title": "आरोग्य",
+    "description": "आपका AI-संचालित स्वास्थ्य सहायक"
+  },
+  "header": {
+    "tagline": "आपका स्वास्थ्य, हमारी प्राथमिकता",
+    "home": "होम",
+    "profile": "प्रोफ़ाइल",
+    "vaccination_tracker": "टीकाकरण ट्रैकर",
+    "outbreak_alerts": "प्रकोप अलर्ट",
+    "arogya_chat": "आरोग्य चैट",
+    "health_check": "स्वास्थ्य जांच",
+    "find_centers": "केंद्र खोजें",
+    "services": "सेवाएं",
+    "government_schemes": "सरकारी योजनाएं",
+    "farmer_health": "किसान स्वास्थ्य",
+    "schemes": "योजनाएं",
+    "login": "लॉगिन",
+    "get_started": "शुरू करें"
+  },
+  "hero": {
+    "title": "आपका स्वास्थ्य",
+    "subtitle": "हमारी प्राथमिकता"
+  },
+  "stats": {
+    "communities_served": "सेवा प्राप्त समुदाय",
+    "vaccinations_tracked": "ट्रैक किए गए टीकाकरण",
+    "health_alerts_sent": "भेजे गए स्वास्थ्य अलर्ट",
+    "expert_doctors": "विशेषज्ञ डॉक्टर",
+    "health_checks": "स्वास्थ्य जांच"
+  }
+}

@@ -1,14 +1,12 @@
-export type Language = 'en' | 'hi' | 'or';
+export type Language = 'en' | 'hi';
 
 // Import translation files
 import enTranslations from '@/translations/en.json';
 import hiTranslations from '@/translations/hi.json';
-import odTranslations from '@/translations/od.json';
 
 export const translations = {
   en: enTranslations,
   hi: hiTranslations,
-  or: odTranslations
 };
 
 // Helper function to get nested translation with fallback

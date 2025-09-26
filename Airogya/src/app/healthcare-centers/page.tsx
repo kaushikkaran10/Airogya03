@@ -252,7 +252,7 @@ export default function HealthcareCentersPage() {
                             ))}
                             {hospital.specialties.length > 4 && (
                               <Badge variant="outline" className="bg-gray-500/10 text-gray-300 border-gray-500/30 text-xs">
-                                {t('pages.healthcare_centers.results.more_specialties', { count: hospital.specialties.length - 4 })}
+                                {`+${hospital.specialties.length - 4} ${t('pages.healthcare_centers.results.more_specialties')}`}
                               </Badge>
                             )}
                           </div>
@@ -272,7 +272,7 @@ export default function HealthcareCentersPage() {
                             ))}
                             {hospital.facilities.length > 4 && (
                               <Badge variant="outline" className="bg-gray-500/10 text-gray-300 border-gray-500/30 text-xs">
-                                {t('pages.healthcare_centers.results.more_facilities', { count: hospital.facilities.length - 4 })}
+                                {`+${hospital.facilities.length - 4} ${t('pages.healthcare_centers.results.more_facilities')}`}
                               </Badge>
                             )}
                           </div>
