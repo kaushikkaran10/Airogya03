@@ -121,7 +121,7 @@ export async function POST(request: NextRequest) {
     console.log('📤 Request payload:', { message, sessionId, userDetails });
 
     // Get the generative model
-    const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash-8b' });
+    const model = genAI.getGenerativeModel({ model: 'gemini-2.5-flash' });
 
     // Create a concise, friendly medical assistant prompt with multilingual support
     const systemPrompt = `CRITICAL INSTRUCTION: You MUST respond in the EXACT SAME LANGUAGE as the user's message.

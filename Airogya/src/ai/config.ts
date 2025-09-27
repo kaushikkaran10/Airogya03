@@ -1,9 +1,8 @@
 import {genkit} from 'genkit';
 import {googleAI} from '@genkit-ai/googleai';
 
-// TODO: Add your Gemini API key here.
-const GEMINI_API_KEY = "YOUR_GEMINI_API_KEY";
-
+// Get Gemini API key from environment variables
+const GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
 
 export function configureGenkit() {
   genkit({
