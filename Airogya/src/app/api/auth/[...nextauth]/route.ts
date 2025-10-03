@@ -43,6 +43,12 @@ const handler = NextAuth({
         }
 
         try {
+          // Check if Supabase is properly configured
+          if (!supabase) {
+            console.error('Supabase client not initialized')
+            return null
+          }
+
           // Try to sign in with Supabase
           const { data, error } = await supabase.auth.signInWithPassword({
             email: credentials.email,
@@ -108,6 +114,19 @@ const handler = NextAuth({
   },
   secret: process.env.NEXTAUTH_SECRET,
   debug: process.env.NODE_ENV === 'development',
+  logger: {
+    error(code, metadata) {
+      console.error('NextAuth Error:', code, metadata)
+    },
+    warn(code) {
+      console.warn('NextAuth Warning:', code)
+    },
+    debug(code, metadata) {
+      if (process.env.NODE_ENV === 'development') {
+        console.log('NextAuth Debug:', code, metadata)
+      }
+    }
+  }
 })
 
 export { handler as GET, handler as POST }
